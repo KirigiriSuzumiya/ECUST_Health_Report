@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>华理健康填报自动化</title>
+</head>
+<body>
+<div>信息录入：（录入成功后会在每天00:05自动填报）</div>
+<div style="color:red;">警告：因为使用人原因造成疫情传播风险而产生的法律责任，由使用人自行承担，作者受开源GPL3.0协议保护</div>
+<form action="/info_upload" enctype="multipart/form-data" method="post">
+    {% csrf_token %}
+    信息办用户名：<input type="text" name="username">
+    信息办密码：<input type="password" name="password">
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
