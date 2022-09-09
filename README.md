@@ -1,0 +1,2 @@
+# ECUST_Health_Report
+python脚本实现华理每日健康填报定时自动上传，解放双手
